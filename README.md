@@ -10,88 +10,81 @@
 
 ## 📌 Project Overview
 
-This project applies the **K-Nearest Neighbors (KNN)** algorithm to classify data points from a real-world dataset.
+This project applies the **K-Nearest Neighbors (KNN)** algorithm to real-world datasets for **classification** tasks.
 
 We explore:
-- How different values of `k` affect performance.
-- Visualizing decision boundaries.
-- Evaluating model accuracy, confusion matrix, and classification metrics.
+- The impact of different values of `k`
+- Model evaluation through ROC-AUC, Accuracy, and F1-Score
+- Visualization of decision boundaries
+- Practical applications in customer segmentation
+
+Developed by **ReNewTech Solutions** to expand applied machine learning expertise.
 
 ---
 
-## 🛠 Project Structure
+## 📂 Project Structure
 
-knn_classification/ │ ├── README.md # Project overview and documentation ├── requirements.txt # Required dependencies │ ├── train_knn.py # Train KNN models with different k values ├── visualize_results.py # Visualize decision boundaries and ROC curves │ ├── data/ # (Optional) Folder for datasets if needed │ └── plots/ # Generated plots and decision boundary visualizations
+knn_classification/ │ ├── README.md — Project overview and documentation ├── requirements.txt — Required Python dependencies │ ├── train_knn.py — Train KNN model on synthetic data ├── visualize_results.py — Generate decision boundary plots │ ├── telecom_customer_segmentation.py — KNN model on telecom real-world dataset │ ├── data/ — Data files (if needed) └── plots/ — Saved visualizations and ROC curves
 
----
-
-## 📊 Dataset
-
-- Real-world dataset for binary classification tasks.
-- Data is scaled for better KNN performance.
 
 ---
 
-## ✨ Custom Enhancements Beyond Original Lab
+## 📊 Datasets Used
 
-This project is inspired by coursework from the **IBM Developer Skills Network** (Machine Learning with Python specialization).
+- **Synthetic classification datasets** for boundary visualization
+- **Telecom Customer Dataset** (IBM Developer Skills Network)  
+  Focus: Segment telecom customers based on demographic and service usage patterns
 
-🔵 **Enhancements made independently at ReNewTech Solutions:**
-- Added visualizations of decision boundaries across different `k` values.
-- Compared classification results across multiple metrics (accuracy, recall, precision, F1-score).
-- Professional project structuring for scalability and reuse.
+---
+
+## ✨ Key Enhancements
+
+- Expanded original IBM lab to include:
+  - **ROC Curve visualization**
+  - **Feature scaling**
+  - **Model evaluation comparison (Accuracy, F1, ROC-AUC)**
+- Built modular code for clean training and evaluation scripts
+- Professional repository and project organization under **ReNewTech Solutions**
 
 ---
 
 ## 🚀 How to Run This Project
 
-1️⃣ Clone the repository:
+1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/ReNewTechSolutions/knn_classification.git
 cd knn_classification
-2️⃣ Install the dependencies:
+2️⃣ Install dependencies
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-3️⃣ Train KNN models:
+3️⃣ Run training scripts
 
 bash
 Copy
 Edit
 python train_knn.py
-4️⃣ Visualize results:
+python telecom_customer_segmentation.py
+4️⃣ Visualize results
 
 bash
 Copy
 Edit
 python visualize_results.py
-📈 Metrics Evaluated
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
-Decision Boundaries
-
 🛠 Future Improvements
-Automate hyperparameter tuning with GridSearchCV.
+Hyperparameter tuning (automated k optimization)
 
-Extend to multiclass classification datasets.
+Expand to multi-class datasets with imbalance
 
-Benchmark KNN against other classifiers (SVM, Decision Trees).
+KNN for regression tasks
 
-👨‍💻 Author
-Felicia Goad — ReNewTech Solutions
+📌 Author
+Felicia Goad, ReNewTech Solutions
 
-License: MIT
+Licensed under MIT License
 
-🔗 Official Tagline
-Smarter Classification with Machine Learning — Powered by ReNewTech Solutions, 2025.
+🔗 Official Tagline:
+Expanding Practical AI Solutions — One Classification at a Time.
