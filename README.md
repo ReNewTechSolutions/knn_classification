@@ -1,83 +1,97 @@
-# 🔵 K-Nearest Neighbors (KNN) Classification Project
+# K-Nearest Neighbors (KNN) Classification Project
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen.svg)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-April%202025-blueviolet)
-
 [![GitHub Project](https://img.shields.io/badge/View%20Project-on%20GitHub-blue?logo=github)](https://github.com/ReNewTechSolutions/knn_classification)
 
 ---
 
 ## 📌 Project Overview
 
-This project applies the **K-Nearest Neighbors (KNN)** algorithm to classify data points from a real-world dataset.  
-We explore the effects of different values of `k`, visualize decision boundaries, and evaluate model performance using accuracy and classification metrics.
+This project applies the **K-Nearest Neighbors (KNN)** algorithm to classify data points from a real-world dataset.
 
-> 📌 **Inspired by coursework from the IBM Developer Skills Network**, extended independently by ReNewTech Solutions to include enhanced visualizations and fine-tuning experiments.
-
----
-
-## 📂 Project Structure
-
-knn_classification/ ├── README.md # Project overview and documentation ├── requirements.txt # Required dependencies ├── train_knn.py # Train and evaluate KNN models ├── visualize_results.py # Plot decision boundaries and confusion matrices ├── data/ # Dataset files ├── plots/ # Generated plots and visualizations
-
-yaml
-Copy
-Edit
+We explore:
+- How different values of `k` affect performance.
+- Visualizing decision boundaries.
+- Evaluating model accuracy, confusion matrix, and classification metrics.
 
 ---
 
-## 📈 Models Used
+## 🛠 Project Structure
 
-- **K-Nearest Neighbors (KNN)** Classifier
-- Evaluations across multiple `k` values (e.g., 3, 5, 7, 9)
+knn_classification/ │ ├── README.md # Project overview and documentation ├── requirements.txt # Required dependencies │ ├── train_knn.py # Train KNN models with different k values ├── visualize_results.py # Visualize decision boundaries and ROC curves │ ├── data/ # (Optional) Folder for datasets if needed │ └── plots/ # Generated plots and decision boundary visualizations
 
 ---
 
-## 🎯 Extra Enhancements (Beyond Course Material)
+## 📊 Dataset
 
-- Automated plotting of **decision boundaries** across different `k`.
-- Confusion Matrix heatmaps for better model evaluation.
-- Analysis of how `k` selection impacts model bias and variance.
+- Real-world dataset for binary classification tasks.
+- Data is scaled for better KNN performance.
+
+---
+
+## ✨ Custom Enhancements Beyond Original Lab
+
+This project is inspired by coursework from the **IBM Developer Skills Network** (Machine Learning with Python specialization).
+
+🔵 **Enhancements made independently at ReNewTech Solutions:**
+- Added visualizations of decision boundaries across different `k` values.
+- Compared classification results across multiple metrics (accuracy, recall, precision, F1-score).
+- Professional project structuring for scalability and reuse.
 
 ---
 
 ## 🚀 How to Run This Project
 
-1. **Clone the Repository:**
+1️⃣ Clone the repository:
 
 ```bash
 git clone https://github.com/ReNewTechSolutions/knn_classification.git
 cd knn_classification
-Install Dependencies:
+2️⃣ Install the dependencies:
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Train Models:
+3️⃣ Train KNN models:
 
 bash
 Copy
 Edit
 python train_knn.py
-Visualize Results:
+4️⃣ Visualize results:
 
 bash
 Copy
 Edit
 python visualize_results.py
+📈 Metrics Evaluated
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+Decision Boundaries
+
 🛠 Future Improvements
-Explore distance weighting options for KNN
+Automate hyperparameter tuning with GridSearchCV.
 
-Optimize k selection using cross-validation
+Extend to multiclass classification datasets.
 
-Introduce PCA or t-SNE dimensionality reduction for visualization
+Benchmark KNN against other classifiers (SVM, Decision Trees).
 
-📌 Author
-Felicia Goad
-ReNewTech Solutions | 2025
+👨‍💻 Author
+Felicia Goad — ReNewTech Solutions
 
-🔗 Official Tagline:
-Empowering Smarter Decisions Through Data-Driven Solutions — ReNewTech Solutions 2025.
+License: MIT
+
+🔗 Official Tagline
+Smarter Classification with Machine Learning — Powered by ReNewTech Solutions, 2025.
