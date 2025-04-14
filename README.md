@@ -23,7 +23,19 @@ Model evaluation includes:
 
 ## 📂 Project Structure
 
-knn_classification/ │── README.md │── requirements.txt │── telecom_customer_segmentation.py │── find_best_k.py │── visualize_results.py │── plots/ │── confusion_matrix_knn.png │── accuracy_vs_k.png │── correlation_matrix.png
+knn_classification/ 
+│── README.md 
+│── requirements.txt 
+│── telecom_customer_segmentation.py 
+│── find_best_k.py 
+│── visualize_results.py 
+│── classification_report_heatmap.py 
+│── plots/ 
+│── confusion_matrix_knn.png 
+│── accuracy_vs_k.png 
+│── correlation_matrix.png 
+│── classification_report_heatmap.png
+
 
 ---
 
@@ -39,22 +51,17 @@ knn_classification/ │── README.md │── requirements.txt │── tel
 ## 🚀 How to Run This Project
 
 1️⃣ **Clone the repository**
-
 ```bash
 git clone https://github.com/ReNewTechSolutions/knn_classification.git
 cd knn_classification
 2️⃣ Install dependencies
-
 pip install -r requirements.txt
-3️⃣ Train the KNN model
-
-python telecom_customer_segmentation.py
-4️⃣ Find the optimal K value
-
-python find_best_k.py
-5️⃣ Generate Correlation Matrix
-
+3️⃣ Train the KNN modelpython telecom_customer_segmentation.py
+4️⃣ Find the optimal K valuepython find_best_k.py
+5️⃣ Generate Classification Report Heatmappython classification_report_heatmap.py
+6️⃣ Visualize Results
 python visualize_results.py
+
 📸 Generated Visuals
 Confusion Matrix for KNN Predictions
 
@@ -62,7 +69,9 @@ Accuracy vs K Value Plot
 
 Correlation Heatmap of Features
 
-All visualizations are automatically saved in the /plots/ directory.
+Classification Report Heatmap
+
+(Visualizations saved in /plots/ automatically.)
 
 ✨ Enhancements Beyond Original Lab
 Modular Python scripting for scalability
@@ -71,17 +80,16 @@ Automated K optimization (find_best_k.py)
 
 Correlation Matrix Heatmap added
 
-Professional folder structure and GitHub-ready documentation
+Professional GitHub-ready structure
 
 SSL issues fixed for Mac OS / Python 3.13+ environments
 
 Future upgrade: GridSearchCV hyperparameter tuning
 
-Inspired by IBM coursework, independently extended by ReNewTech Solutions for real-world application readiness.
+Inspired by IBM coursework and independently extended by ReNewTech Solutions for real-world application readiness.
 
 📌 Author
 Felicia Goad | ReNewTech Solutions
-
 Licensed under the MIT License.
 
 🔗 Official Tagline

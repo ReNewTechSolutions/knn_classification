@@ -1,3 +1,7 @@
+# ✅ TEMP SSL Fix (MacOS / Python 3.13)
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 # visualize_results.py
 import pandas as pd
 import numpy as np
