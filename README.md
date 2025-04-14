@@ -12,26 +12,27 @@
 ## 📌 Project Overview
 
 This project applies **K-Nearest Neighbors (KNN)** classification to segment telecom customers based on demographic data.  
-We predict customer service categories: Basic, E-Service, Plus, or Total Service.
+We predict customer service categories: **Basic**, **E-Service**, **Plus**, or **Total Service**.
 
 Model evaluation includes:
 - Accuracy
 - Confusion Matrix
-- Visualization of model performance
+- Visualizations
 
 ---
 
 ## 📂 Project Structure
 
-knn_classification/ │── README.md │── requirements.txt │── telecom_customer_segmentation.py │── find_best_k.py │── plots/ │── confusion_matrix_knn.png │── accuracy_vs_k.png
+knn_classification/ │── README.md │── requirements.txt │── telecom_customer_segmentation.py │── find_best_k.py │── visualize_results.py │── plots/ │── confusion_matrix_knn.png │── accuracy_vs_k.png │── correlation_matrix.png
 
 ---
 
 ## 📈 Dataset
 
 - **Source:** IBM Developer Skills Network (Machine Learning with Python specialization)
-- **Records:** 1000 customer records with demographics and service usage patterns
-- **Target Variable:** `custcat` (customer service category)
+- **Records:** 1000 customer records
+- **Features:** Demographics and service usage
+- **Target:** `custcat` (customer service category)
 
 ---
 
@@ -42,29 +43,45 @@ knn_classification/ │── README.md │── requirements.txt │── tel
 ```bash
 git clone https://github.com/ReNewTechSolutions/knn_classification.git
 cd knn_classification
-
 2️⃣ Install dependencies
+
 pip install -r requirements.txt
-
 3️⃣ Train the KNN model
-python telecom_customer_segmentation.py
 
+python telecom_customer_segmentation.py
 4️⃣ Find the optimal K value
+
 python find_best_k.py
+5️⃣ Generate Correlation Matrix
+
+python visualize_results.py
+📸 Generated Visuals
+Confusion Matrix for KNN Predictions
+
+Accuracy vs K Value Plot
+
+Correlation Heatmap of Features
+
+All visualizations are automatically saved in the /plots/ directory.
 
 ✨ Enhancements Beyond Original Lab
 Modular Python scripting for scalability
 
 Automated K optimization (find_best_k.py)
 
-Accuracy vs K plot for K-value tuning
+Correlation Matrix Heatmap added
+
+Professional folder structure and GitHub-ready documentation
+
+SSL issues fixed for Mac OS / Python 3.13+ environments
 
 Future upgrade: GridSearchCV hyperparameter tuning
 
-Inspired by IBM coursework and independently extended by ReNewTech Solutions for real-world application readiness.
+Inspired by IBM coursework, independently extended by ReNewTech Solutions for real-world application readiness.
 
 📌 Author
 Felicia Goad | ReNewTech Solutions
+
 Licensed under the MIT License.
 
 🔗 Official Tagline
