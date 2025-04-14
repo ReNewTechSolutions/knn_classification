@@ -48,17 +48,18 @@ knn_classification/
 
 ---
 
-## 🚀 How to Run This Project
-
-1️⃣ **Clone the repository**
-```bash
+🚀 How to Run This Project
+1️⃣ Clone the repository
 git clone https://github.com/ReNewTechSolutions/knn_classification.git
 cd knn_classification
 2️⃣ Install dependencies
 pip install -r requirements.txt
-3️⃣ Train the KNN modelpython telecom_customer_segmentation.py
-4️⃣ Find the optimal K valuepython find_best_k.py
-5️⃣ Generate Classification Report Heatmappython classification_report_heatmap.py
+3️⃣ Train the KNN model
+python telecom_customer_segmentation.py
+4️⃣ Find the optimal K value
+python find_best_k.py
+5️⃣ Generate Classification Report Heatmap
+python classification_report_heatmap.py
 6️⃣ Visualize Results
 python visualize_results.py
 
