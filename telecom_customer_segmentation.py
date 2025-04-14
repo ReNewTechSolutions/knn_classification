@@ -1,6 +1,9 @@
 # -----------------------------------------------
 # ReNewTech Solutions - Telecom Customer Segmentation (KNN Classification)
 # -----------------------------------------------
+# ✅ Fix SSL certificate verification for downloads
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # ✅ 1. Import Libraries
 import pandas as pd
@@ -24,4 +27,8 @@ print(df.head())
 print("\nDataset Shape:", df.shape)
 print("\nDataset Columns:", df.columns)
 print("\nClass Distribution (custcat):")
+print(df['custcat'].value_counts())
+
+# 5. Explore Target Variable
+print("\nCustomer Category Value Counts:")
 print(df['custcat'].value_counts())
